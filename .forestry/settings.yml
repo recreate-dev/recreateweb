@@ -4,6 +4,10 @@ auto_deploy: false
 admin_path: "/static/admin"
 webhook_url: 
 sections:
+- type: document
+  path: contact
+  label: Contact
+  match: "**/*"
 - type: directory
   path: projects
   label: Projects
@@ -11,13 +15,6 @@ sections:
   match: "**/*.md"
   templates:
   - project
-- type: directory
-  path: journal
-  label: Journal
-  create: documents
-  match: "**/*.md"
-  templates:
-  - journal
 - type: document
   path: data/theme.json
   label: Theme config
