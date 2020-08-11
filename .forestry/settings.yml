@@ -7,7 +7,6 @@ sections:
 - type: document
   path: contact
   label: Contact
-  match: "**/*"
 - type: directory
   path: projects
   label: Projects
